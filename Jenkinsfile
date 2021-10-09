@@ -8,17 +8,7 @@ pipeline {
           }
           stage("echo branch") {
                steps {
-                    echo "on FEATURE branch"
-               }
-          }
-		  stage("Unit test") {
-               steps {
-                    sh "./gradlew test"
-               }
-          }
-          stage("Static code analysis") {
-               steps {
-                    sh "./gradlew checkstyleMain"
+                    echo "on PLAYGROUND branch"
                }
           }
      }
